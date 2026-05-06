@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+    <title>Prediction Result</title>
+
+    <link rel="stylesheet"
+    href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="result-wrapper">
+
+    <!-- Prediction Card -->
+    <div class="card result-card">
+
+        <h1>📊 Prediction Result</h1>
+
+        <div class="grade-box">
+            {{ prediction }}
+        </div>
+
+        <button onclick="window.location.href='/'">
+            Predict Again
+        </button>
+
+    </div>
+
+    <!-- Analytics Section -->
+    <div class="analytics-section">
+
+        <div class="graph-card">
+            <h2>GPA Distribution</h2>
+
+            <img src="{{ url_for('static',
+            filename='gpa_distribution.png') }}">
+        </div>
+
+        <div class="graph-card">
+            <h2>Study Time vs GPA</h2>
+
+            <img src="{{ url_for('static',
+            filename='study_vs_gpa.png') }}">
+        </div>
+
+        <div class="graph-card">
+            <h2>Feature Importance</h2>
+
+            <img src="{{ url_for('static',
+            filename='feature_importance.png') }}">
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

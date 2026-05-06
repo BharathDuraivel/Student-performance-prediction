@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Performance Prediction</title>
+
+    <link rel="stylesheet"
+    href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="card">
+
+        <h1>🎓 Student Performance Prediction</h1>
+
+        <p class="subtitle">
+            Predict student academic grade using Machine Learning
+        </p>
+
+        <form action="/predict" method="post">
+
+            <div class="input-group">
+                <input type="number" name="Age" placeholder="Age" required>
+            </div>
+
+            <div class="input-group">
+                <select name="Gender" required>
+                    <option value="">Select Gender</option>
+                    <option value="0">Male</option>
+                    <option value="1">Female</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <select name="Ethnicity" required>
+                    <option value="">Select Ethnicity</option>
+                    <option value="0">Caucasian</option>
+                    <option value="1">African American</option>
+                    <option value="2">Asian</option>
+                    <option value="3">Other</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <input type="number"
+                name="ParentalEducation"
+                placeholder="Parental Education (0-4)"
+                required>
+            </div>
+
+            <div class="input-group">
+                <input type="number"
+                step="any"
+                name="StudyTimeWeekly"
+                placeholder="Study Time Weekly"
+                required>
+            </div>
+
+            <div class="input-group">
+                <input type="number"
+                name="Absences"
+                placeholder="Absences"
+                required>
+            </div>
+
+            <div class="input-group">
+                <select name="Tutoring" required>
+                    <option value="">Tutoring</option>
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <input type="number"
+                name="ParentalSupport"
+                placeholder="Parental Support (0-4)"
+                required>
+            </div>
+
+            <div class="input-group">
+                <select name="Extracurricular" required>
+                    <option value="">Extracurricular</option>
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <select name="Sports" required>
+                    <option value="">Sports</option>
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <select name="Music" required>
+                    <option value="">Music</option>
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <select name="Volunteering" required>
+                    <option value="">Volunteering</option>
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <input type="number"
+                step="any"
+                name="GPA"
+                placeholder="GPA"
+                required>
+            </div>
+
+            <button type="submit">
+                Predict Grade
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+</body>
+</html>

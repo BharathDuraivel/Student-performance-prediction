@@ -1,0 +1,134 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background: linear-gradient(135deg,#4facfe,#6a11cb);
+    padding:30px;
+    color:white;
+}
+
+/* =========================
+   HOME PAGE
+========================= */
+
+.container{
+    width:100%;
+    max-width:500px;
+    margin:auto;
+}
+
+.card{
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(12px);
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 8px 32px rgba(0,0,0,0.2);
+}
+
+h1{
+    text-align:center;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    text-align:center;
+    margin-bottom:25px;
+    opacity:0.9;
+}
+
+.input-group{
+    margin-bottom:15px;
+}
+
+input,select{
+    width:100%;
+    padding:14px;
+    border:none;
+    outline:none;
+    border-radius:12px;
+    font-size:15px;
+}
+
+button{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:12px;
+    background:white;
+    color:#764ba2;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+    margin-top:10px;
+}
+
+button:hover{
+    transform:scale(1.03);
+    background:#f2f2f2;
+}
+
+/* =========================
+   RESULT PAGE
+========================= */
+
+.result-wrapper{
+    max-width:1200px;
+    margin:auto;
+}
+
+.result-card{
+    max-width:500px;
+    margin:auto;
+    text-align:center;
+}
+
+.grade-box{
+    margin-top:25px;
+    margin-bottom:20px;
+    font-size:60px;
+    font-weight:bold;
+}
+
+/* =========================
+   GRAPHS
+========================= */
+
+.analytics-section{
+    margin-top:40px;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(320px,1fr));
+
+    gap:25px;
+}
+
+.graph-card{
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(12px);
+    padding:20px;
+    border-radius:20px;
+    box-shadow:0 8px 32px rgba(0,0,0,0.2);
+    text-align:center;
+}
+
+.graph-card h2{
+    margin-bottom:15px;
+    font-size:22px;
+}
+
+.graph-card img{
+    width:100%;
+    max-height:300px;
+    object-fit:contain;
+    border-radius:12px;
+    background:white;
+    padding:10px;
+}
